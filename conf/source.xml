@@ -1,5 +1,8 @@
 <metadata>
     <source_conf>
+        <class_name>com.metadata.yg.impl.XjcbcExecutor</class_name>
+    </source_conf>
+    <source_conf>
         <class_name>com.metadata.yg.impl.nmggdExecutor</class_name>
     </source_conf>
 </metadata>

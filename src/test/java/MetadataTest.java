@@ -1,4 +1,5 @@
 import com.metadata.yg.inf.MetadataExecutor;
+import com.metadata.yg.task.DataExecutor;
 import com.metadata.yg.utils.FileUtils;
 import org.junit.Test;
 
@@ -19,7 +20,7 @@ public class MetadataTest {
             testList.add("test1");
             testList.add("test2");
             testList.add("test3");
-            System.out.println(executor.getFormatRow(testList));
+            System.out.println(executor.getFormatRow("list"));
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
@@ -68,6 +69,18 @@ public class MetadataTest {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @Test
+    public void test03() {
+        try {
+            List<String> rs = new ArrayList<>();
+            rs.add("123");
+            rs.add("124");
+            rs.add("125");
+            new DataExecutor().executor(rs);
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

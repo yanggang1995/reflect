@@ -13,10 +13,7 @@ public class nmggdExecutor implements MetadataExecutor {
         this.formatList=new ArrayList<String>();
     }
 
-    public List<String> getFormatRow(List<String> metadata) {
-        for(String data:metadata){
-            formatList.add(data+"_0.0");
-        }
-        return formatList;
+    public String getFormatRow(String metadata) {
+        return metadata+"_0.0";
     }
 }
