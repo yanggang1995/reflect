@@ -7,22 +7,27 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import java.io.*;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class FileUtils {
 
 
-    public static String readXml(String loopNode,String needNodeName){
+    public static List<Map<String,String>> readXml(String loopNode){
+        List<Map<String,String>> confList = new ArrayList<>();
         SAXReader saxReader=new SAXReader();
         try {
             Document document= saxReader.read(new File(Conf.EXECUTORFIL));
             Element root=document.getRootElement();
             Iterator it=root.elementIterator(loopNode);
             while (it.hasNext()){
+                Map<String,String> classTable = new HashMap<>();
                 Element element= (Element) it.next();
-                return element.elementText(needNodeName);
+                classTable.put("class",element.elementText("class"));
+                classTable.put("table",element.elementText("table"));
+                classTable.put("sql",element.elementText("sql"));
+                confList.add(classTable);
             }
+            return confList;
         } catch (DocumentException e) {
             System.out.println(e.getMessage());
         }

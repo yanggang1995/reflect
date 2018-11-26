@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 
 public class MetadataTest {
@@ -14,7 +15,7 @@ public class MetadataTest {
     @Test
     public void metadataInvok(){
         try {
-            Class<?> clazz = Class.forName(FileUtils.readXml("source_conf","class_name"));
+            Class<?> clazz = Class.forName(FileUtils.readXml("source_conf").get(1).get("class"));
             MetadataExecutor executor= (MetadataExecutor) clazz.newInstance();
             List<String> testList=new ArrayList<String>();
             testList.add("test1");
@@ -60,7 +61,7 @@ public class MetadataTest {
         File file=new File("data/testTxt.txt");
         try {
             BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream(file));
-            for(int i=0;i<20000;i++) {
+            for(int i=0;i<2000000;i++) {
                 bos.write((i+"---").getBytes());
                 bos.write("\n".getBytes());
             }
@@ -74,14 +75,13 @@ public class MetadataTest {
     }
     @Test
     public void test03() {
-        try {
-            List<String> rs = new ArrayList<>();
-            rs.add("123");
-            rs.add("124");
-            rs.add("125");
-            new DataExecutor().executor(rs);
-        } catch (Exception e) {
-            e.printStackTrace();
+        for(Map conf:FileUtils.readXml("source_conf")){
+            try {
+                new DataExecutor().executor(conf);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            break;
         }
     }
 }

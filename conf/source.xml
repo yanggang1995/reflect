@@ -1,8 +1,12 @@
 <metadata>
     <source_conf>
-        <class_name>com.metadata.yg.impl.XjcbcExecutor</class_name>
+        <class>com.metadata.yg.impl.nmggdExecutor</class>
+        <table>nns_user</table>
+        <sql>select nns_id,nns_name,sp_id from user </sql>
     </source_conf>
     <source_conf>
-        <class_name>com.metadata.yg.impl.nmggdExecutor</class_name>
+        <class>com.metadata.yg.impl.nmggdExecutor</class>
+        <table>nns_device</table>
+        <sql>select nns_id,nns_name from device </sql>
     </source_conf>
 </metadata>
