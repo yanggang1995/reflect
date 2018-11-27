@@ -1,8 +1,8 @@
 <metadata>
     <source_conf>
         <class>com.metadata.yg.impl.nmggdExecutor</class>
-        <table>nns_user</table>
-        <sql>select nns_id,nns_name,sp_id from user </sql>
+        <table>NNS_USER</table>
+        <sql>select nns_id,nns_name,sp_id from hive.starcor.nns_user </sql>
     </source_conf>
     <source_conf>
         <class>com.metadata.yg.impl.nmggdExecutor</class>

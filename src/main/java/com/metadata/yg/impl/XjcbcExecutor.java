@@ -2,9 +2,11 @@ package com.metadata.yg.impl;
 
 import com.metadata.yg.inf.MetadataExecutor;
 
+import java.util.List;
+
 public class XjcbcExecutor implements MetadataExecutor {
     @Override
-    public String getFormatRow(String line) {
-        return line+"*_*";
+    public List<String> getFormatRow(List<String> row) {
+        return row;
     }
 }

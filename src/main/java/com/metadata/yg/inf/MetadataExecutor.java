@@ -1,5 +1,7 @@
 package com.metadata.yg.inf;
 
+import java.util.List;
+
 public interface MetadataExecutor {
-    String getFormatRow(String line);
+    List<String> getFormatRow(List<String> row);
 }

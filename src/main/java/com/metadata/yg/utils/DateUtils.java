@@ -1,12 +1,12 @@
 package com.metadata.yg.utils;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import org.joda.time.DateTime;
 
 public class DateUtils {
 
-    public static String getDate(){
-        return new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
+    public static String getYesterDay(){
+        DateTime todayDt = new DateTime();
+        DateTime yestoday = todayDt.minusDays(1);
+        return yestoday.toString("yyyyMMdd");
     }
-
 }

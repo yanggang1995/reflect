@@ -7,13 +7,12 @@ import java.util.List;
 
 public class nmggdExecutor implements MetadataExecutor {
 
-    private List<String> formatList;
-
-    public nmggdExecutor(){
-        this.formatList=new ArrayList<String>();
-    }
-
-    public String getFormatRow(String metadata) {
-        return metadata+"_0.0";
+    public List<String> getFormatRow(List<String> row) {
+        List<String> formatList = new ArrayList<>();
+        formatList.add("ygID"+row.get(0));
+        formatList.add("ygID"+row.get(1));
+        formatList.add("ygID"+row.get(2));
+        formatList.add("ygID_yg");
+        return formatList;
     }
 }
