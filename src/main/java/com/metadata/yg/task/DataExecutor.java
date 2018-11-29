@@ -14,15 +14,15 @@ import java.util.concurrent.Future;
 
 public class DataExecutor {
     private final static int DATACACHENUM = 100000;
-    private static  int currThreadCount = 0;
+    private static int currThreadCount = 0;
     private static int maxThreadCount = 20;
-    private String dataFile ;
+    private String dataFile;
 
-    public DataExecutor(String path){
+    public DataExecutor(String path) {
         this.dataFile = path;
     }
 
-    public void executor(MetadataExecutor executor,ResultSet rs) throws Exception {
+    public void executor(MetadataExecutor executor, ResultSet rs) throws Exception {
 
         final ExecutorService threadPool = Executors.newFixedThreadPool(maxThreadCount);//10
         final List<Future<String>> threadResultList = new ArrayList<>();
@@ -51,7 +51,7 @@ public class DataExecutor {
                 writeLog("录入错误的数据：:0", e.getMessage());
             }
             return null;
-        },executor,rs);
+        }, executor, rs);
         threadPool.shutdown();
         writeDataFile.flush(dataFile);
         stopWatch.stop();
@@ -65,7 +65,7 @@ public class DataExecutor {
         while (rs.next()) {
             List<String> tmp = new ArrayList<>();
             for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
-                tmp.add((String) rs.getObject(i));
+                tmp.add(rs.getObject(i).toString());
             }
             num++;
             callBack.call(num, executor.getFormatRow(tmp));

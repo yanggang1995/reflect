@@ -10,8 +10,8 @@ public class nmggdExecutor implements MetadataExecutor {
     public List<String> getFormatRow(List<String> row) {
         List<String> formatList = new ArrayList<>();
         formatList.add("ygID"+row.get(0));
-        formatList.add("ygID"+row.get(1));
-        formatList.add("ygID"+row.get(2));
+//        formatList.add("ygID"+row.get(1));
+//        formatList.add("ygID"+row.get(2));
         formatList.add("ygID_yg");
         return formatList;
     }

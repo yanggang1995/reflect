@@ -1,4 +1,3 @@
-import com.mchange.v2.c3p0.ComboPooledDataSource;
 import com.metadata.yg.inf.MetadataExecutor;
 import com.metadata.yg.task.DataExecutor;
 import com.metadata.yg.utils.C3P0Utils;
@@ -6,10 +5,6 @@ import com.metadata.yg.utils.FileUtils;
 import org.junit.Test;
 
 import java.io.*;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -83,8 +78,9 @@ public class MetadataTest {
     public void test03() {
         for(Map conf:FileUtils.readXml("source_conf")){
             try {
-                new DataExecutor(("data/"+conf.get("table")).toLowerCase()).executor(FileUtils.getExecutor((String) conf.get("class")),C3P0Utils.getResultSet((String) conf.get("sql")));
-                C3P0Utils.closeConn();
+                C3P0Utils c3P0Utils=new C3P0Utils();
+                new DataExecutor(("data/"+conf.get("table")).toLowerCase()).executor(FileUtils.getExecutor((String) conf.get("class")),c3P0Utils.getResultSet((String) conf.get("sql")));
+                c3P0Utils.closeConn();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -94,10 +90,10 @@ public class MetadataTest {
 
     @Test
     public void test04(){
-        Connection conn=null;
+        /*Connection conn=null;
         PreparedStatement pstmp=null;
         //1.创建自定义连接池对象
-        ComboPooledDataSource dataSource= (ComboPooledDataSource) C3P0Utils.getMysqlDataSource();//加载默认配置
+        ComboPooledDataSource dataSource= (ComboPooledDataSource) C3P0Utils.getDataSource();//加载默认配置
 //        ComboPooledDataSource dataSource=new ComboPooledDataSource("lfriend");//加载有名称的配置
 
         try {
@@ -127,6 +123,6 @@ public class MetadataTest {
                 e.printStackTrace();
             }
 
-        }
+        }*/
     }
 }

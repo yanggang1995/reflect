@@ -1,6 +1,8 @@
 package com.metadata.yg.utils;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
@@ -17,25 +19,26 @@ import static com.metadata.yg.constant.Conf.*;
  * @create: 2018-11-27 14:36
  **/
 public class C3P0Utils {
-    private static ComboPooledDataSource dataSource=new ComboPooledDataSource();
-    private  static Connection conn = null;
-    private  static Statement st = null;
-    private  static ResultSet rs = null;
+    private static final Logger logger = LoggerFactory.getLogger(C3P0Utils.class);
+    private  ComboPooledDataSource dataSource=new ComboPooledDataSource();
+    private  Connection conn = null;
+    private  Statement st = null;
+    private  ResultSet rs = null;
 
-    public static DataSource getDataSource(){
+    public  DataSource getDataSource(){
         try{
-            dataSource.setDriverClass(DRIVER);
-            dataSource.setJdbcUrl(URL);
-            dataSource.setUser(USER);
-            dataSource.setPassword(PASSWORD);
-            return dataSource;
+            this.dataSource.setDriverClass(DRIVER);
+            this.dataSource.setJdbcUrl(URL);
+            this.dataSource.setUser(USER);
+            this.dataSource.setPassword(PASSWORD);
+            return this.dataSource;
         } catch (PropertyVetoException e) {
             e.printStackTrace();
         }
         return null;
     }
 
-    public static Connection getConnection(){
+    public  Connection getConnection(){
         try {
             return getDataSource().getConnection();
         } catch (SQLException e) {
@@ -43,20 +46,20 @@ public class C3P0Utils {
         }
     }
 
-    public static ResultSet getResultSet(String sql) {
-        conn = getConnection();
+    public  ResultSet getResultSet(String sql) {
+        this.conn = getConnection();
         try {
-            st = conn.createStatement();
-            System.out.println("连接创建成功");
-            rs = st.executeQuery(sql);
-            return rs;
+            this.st = conn.createStatement();
+            logger.info("C3p0连接创建成功");
+            this.rs = this.st.executeQuery(sql);
+            return this.rs;
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
 
-    public static void closeConn(){
+    public void closeConn(){
         try {
             if(rs != null)
                 rs.close();
@@ -66,7 +69,7 @@ public class C3P0Utils {
                 conn.close();
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
 
     }

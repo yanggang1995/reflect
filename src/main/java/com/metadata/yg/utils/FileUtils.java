@@ -6,6 +6,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.*;
@@ -14,6 +16,7 @@ import static com.metadata.yg.constant.Conf.*;
 
 public class FileUtils {
 
+    private static final Logger logger = LoggerFactory.getLogger(FileUtils.class);
 
     public static List<Map<String,String>> readXml(String loopNode){
         List<Map<String,String>> confList = new ArrayList<>();
@@ -32,16 +35,14 @@ public class FileUtils {
             }
             return confList;
         } catch (DocumentException e) {
-            System.out.println(e.getMessage());
+            logger.error(e.getMessage());
         }
         return null;
     }
 
 
     public static File createCSVFile(List<List> exportData, String fileName) {
-
         FileOutputStream outSTr;
-
         File csvFile=null;
         try {
             //定义文件名格式并创建
@@ -61,9 +62,9 @@ public class FileUtils {
             Buff.flush();
             Buff.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            logger.error("文件创建失败");
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return csvFile;
     }
@@ -77,17 +78,31 @@ public class FileUtils {
         return b;
     }
 
+    public static byte[] radixStr(String str,int radix){
+        switch (radix){
+            case 8:
+                return str.getBytes();
+            case 16:
+                return radix16To2(str);
+            case 10:
+                return str.getBytes();
+            default:
+                logger.info("未知的进制，默认为十进制");
+                return str.getBytes();
+        }
+    }
+
     public static MetadataExecutor getExecutor(String className){
         try {
             Class<?> clazz = Class.forName(className);
             MetadataExecutor executor= (MetadataExecutor) clazz.newInstance();
             return executor;
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            logger.error("配置文件中的插件类不存在");
         } catch (IllegalAccessException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } catch (InstantiationException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }
@@ -99,9 +114,9 @@ public class FileUtils {
             props.load(in);
             in.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            logger.error("config.properties不存在");
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return props;
     }
