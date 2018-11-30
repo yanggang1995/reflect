@@ -1,5 +1,6 @@
 package com.metadata.yg.utils;
 
+import com.metadata.yg.ExecutorMain;
 import com.metadata.yg.constant.Conf;
 import com.metadata.yg.inf.MetadataExecutor;
 import org.dom4j.Document;
@@ -10,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.lang.management.ManagementFactory;
 import java.util.*;
 
 import static com.metadata.yg.constant.Conf.*;
@@ -119,5 +121,42 @@ public class FileUtils {
             logger.error(e.getMessage());
         }
         return props;
+    }
+
+    /**
+     * 创建文件输出目录
+     */
+    public static void makeOutPath(){
+        File outpath = new File(Conf.OUTPATH);
+        if(!outpath.exists()){
+            outpath.mkdirs();
+            logger.info("文件输出目录已创建："+Conf.OUTPATH);
+        }
+        logger.info("文件输出目录："+Conf.OUTPATH);
+    }
+
+    /**
+     * 获取程序执行的PID
+     * @return pid
+     */
+    public  static String getPID(){
+        return ManagementFactory.getRuntimeMXBean().getName().split("@")[0];
+    }
+
+    /**
+     * 获取程序执行的绝对路径目录
+     * @return 目录
+     */
+    public static String getProjectPath() {
+        java.net.URL url = ExecutorMain.class .getProtectionDomain().getCodeSource().getLocation();
+        String filePath = null ;
+        try {
+            filePath = java.net.URLDecoder.decode (url.getPath(), "utf-8");
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+        }
+        if (filePath!=null && filePath.endsWith(".jar"))
+            filePath = filePath.substring(0, filePath.lastIndexOf("/"));
+        return new File(filePath).getAbsolutePath();
     }
 }

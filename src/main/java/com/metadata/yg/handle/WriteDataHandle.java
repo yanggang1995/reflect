@@ -58,6 +58,7 @@ public class WriteDataHandle {
         BufferedOutputStream bw = null;
         try {
             writeLock.lock();
+            System.out.println(path + "." + DateUtils.getYesterDay() + "." + index + "." + SUFFIX);
             bw = initDataWrite(new File(path + "." + DateUtils.getYesterDay() + "." + index + "." + SUFFIX));
             // 如果数据没有超出缓存.则返回.
             if (!isCacheExpires()) {
@@ -92,7 +93,6 @@ public class WriteDataHandle {
     }
 
     public void flush(String path) throws Exception {
-        logger.info(String.format("flush线程：%s, 需要保存数据的集合长度:%s", Thread.currentThread().getName(), cacheList.size()));
         BufferedOutputStream bw = null;
         try {
             bw = initDataWrite(new File(path + "." + DateUtils.getYesterDay() + "." + index + "." + SUFFIX));
