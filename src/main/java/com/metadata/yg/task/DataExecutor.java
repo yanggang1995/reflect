@@ -2,8 +2,10 @@ package com.metadata.yg.task;
 
 import com.metadata.yg.handle.WriteDataHandle;
 import com.metadata.yg.inf.CallBack;
-import com.metadata.yg.inf.MetadataExecutor;
+import com.metadata.yg.transform.MetadataTransform;
 import com.metadata.yg.utils.StopWatch;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -13,20 +15,26 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class DataExecutor {
-    private final static int DATACACHENUM = 100000;
-    private static int currThreadCount = 0;
-    private static int maxThreadCount = 20;
+    private static final Logger logger = LoggerFactory.getLogger(DataExecutor.class);
+    private final static int DATACACHENUM = 100000;  //数据缓存条数
+    private static int currThreadCount = 0; //线程计数器
+    private static int maxThreadCount = 20; //最大线程数
     private String dataFile;
 
     public DataExecutor(String path) {
         this.dataFile = path;
     }
 
-    public void executor(MetadataExecutor executor, ResultSet rs) throws Exception {
-
-        final ExecutorService threadPool = Executors.newFixedThreadPool(maxThreadCount);//10
+    /**
+     * 调用并执行loadDB，运行整个处理流程
+     * @param executor
+     * @param rs
+     * @throws Exception
+     */
+    public void executor(MetadataTransform executor, ResultSet rs) throws Exception {
+        final ExecutorService threadPool = Executors.newFixedThreadPool(maxThreadCount);
         final List<Future<String>> threadResultList = new ArrayList<>();
-        final WriteDataHandle writeDataFile = new WriteDataHandle(DATACACHENUM);//缓存 10000
+        final WriteDataHandle writeDataFile = new WriteDataHandle(DATACACHENUM);
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
         loadDB((num, data) -> {
@@ -48,31 +56,32 @@ public class DataExecutor {
                     threadResultList.add(future);
                 }
             } catch (Exception e) {
-                writeLog("录入错误的数据：:0", e.getMessage());
+                logger.info("-----录入数据异常-----", e.getMessage());
             }
             return null;
         }, executor, rs);
         threadPool.shutdown();
         writeDataFile.flush(dataFile);
         stopWatch.stop();
-        System.out.println(String.format("任务完成时间:%s ms", stopWatch.getTime()));
-        System.out.println(WriteDataHandle.index);
+        logger.info(String.format("任务完成时间:%s ms", stopWatch.getTime()));
     }
 
-    //读一行数据
-    public void loadDB(CallBack<Void> callBack, MetadataExecutor executor, ResultSet rs) throws Exception {
+    /**
+     * 读一行数据
+     * @param callBack 回调接口
+     * @param transform 数据转换
+     * @param rs jdbc结果集
+     * @throws Exception
+     */
+    public void loadDB(CallBack<Void> callBack, MetadataTransform transform, ResultSet rs) throws Exception {
         int num = 0;
         while (rs.next()) {
-            List<String> tmp = new ArrayList<>();
+            List<byte []> tmp = new ArrayList<>();
             for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
-                tmp.add(rs.getObject(i).toString());
+                tmp.add(rs.getObject(i).toString().getBytes());
             }
             num++;
-            callBack.call(num, executor.getFormatRow(tmp));
+            callBack.call(num, transform.getFormatRow(tmp));
         }
-    }
-
-    public void writeLog(String str, Object... values) {
-        System.out.println(str);
     }
 }

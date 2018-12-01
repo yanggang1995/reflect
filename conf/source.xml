@@ -1,11 +1,11 @@
 <metadata>
     <source_conf>
-        <class>com.metadata.yg.impl.nmggdExecutor</class>
+        <class>com.metadata.yg.transform.impl.defaultTransform</class>
         <table>NNS_USER</table>
-        <sql>select day from hive.starcor.play_log where day=20181123</sql>
+        <sql>select day from cnt_user_active where day=20181123</sql>
     </source_conf>
     <source_conf>
-        <class>com.metadata.yg.impl.nmggdExecutor</class>
+        <class>com.metadata.yg.transform.impl.defaultTransform</class>
         <table>nns_device</table>
         <sql>select nns_id,nns_name from device </sql>
     </source_conf>

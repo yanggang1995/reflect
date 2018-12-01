@@ -2,7 +2,6 @@ package com.metadata.yg.utils;
 
 import com.metadata.yg.ExecutorMain;
 import com.metadata.yg.constant.Conf;
-import com.metadata.yg.inf.MetadataExecutor;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
@@ -15,6 +14,7 @@ import java.lang.management.ManagementFactory;
 import java.util.*;
 
 import static com.metadata.yg.constant.Conf.*;
+import static com.metadata.yg.utils.DataUtils.radix16To2;
 
 public class FileUtils {
 
@@ -69,44 +69,6 @@ public class FileUtils {
             logger.error(e.getMessage());
         }
         return csvFile;
-    }
-
-
-    public static byte[] radix16To2(String str) {
-        byte[] b = new byte[str.length() / 2];
-        for (int i = 0; i < b.length; i++) {
-            b[i] = ((byte) Integer.parseInt(str.substring(i * 2, (1 + i) * 2), 16));
-        }
-        return b;
-    }
-
-    public static byte[] radixStr(String str,int radix){
-        switch (radix){
-            case 8:
-                return str.getBytes();
-            case 16:
-                return radix16To2(str);
-            case 10:
-                return str.getBytes();
-            default:
-                logger.info("未知的进制，默认为十进制");
-                return str.getBytes();
-        }
-    }
-
-    public static MetadataExecutor getExecutor(String className){
-        try {
-            Class<?> clazz = Class.forName(className);
-            MetadataExecutor executor= (MetadataExecutor) clazz.newInstance();
-            return executor;
-        } catch (ClassNotFoundException e) {
-            logger.error("配置文件中的插件类不存在");
-        } catch (IllegalAccessException e) {
-            logger.error(e.getMessage());
-        } catch (InstantiationException e) {
-            logger.error(e.getMessage());
-        }
-        return null;
     }
 
     public static Properties getConfig(){

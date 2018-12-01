@@ -1,86 +1,61 @@
+import com.metadata.yg.common.People;
+import com.metadata.yg.handle.ReadDataHandle;
+import com.metadata.yg.handle.WriteDataHandle;
+import com.metadata.yg.task.DataExecutor;
+import com.metadata.yg.utils.C3P0Utils;
+import com.metadata.yg.utils.DateUtils;
+import com.metadata.yg.utils.FileUtils;
+import com.metadata.yg.utils.ObjectUtils;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.sql.SQLException;
+import java.util.Map;
+
+import static com.metadata.yg.constant.Conf.SUFFIX;
 
 
 public class MetadataTest {
-
-
-    @Test
-    public void metadataInvok(){
-        /*try {
-            Class<?> clazz = Class.forName(FileUtils.readXml("source_conf").get(1).get("class"));
-            MetadataExecutor executor= (MetadataExecutor) clazz.newInstance();
-            List<String> testList=new ArrayList<String>();
-            testList.add("test1");
-            testList.add("test2");
-            testList.add("test3");
-            System.out.println(executor.getFormatRow(testList));
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }*/
-    }
+    private static final Logger logger = LoggerFactory.getLogger(MetadataTest.class);
 
     @Test
-    public void csvTest(){
-        /*List<List> metadata = new ArrayList<>();
-        List<String> tmp1 = new ArrayList<>();
-        tmp1.add("王小二");
-        tmp1.add("男");
-        tmp1.add("20");
-
-        List<String> tmp2 = new ArrayList<>();
-        tmp2.add("李三娃");
-        tmp2.add("男");
-        tmp2.add("35");
-
-        metadata.add(tmp1);
-        metadata.add(tmp2);
-
-        FileUtils.createCSVFile(metadata,"data/test01");*/
-
-    }
-
-    @Test
-    public void test01(){
-        System.out.println("1".getBytes());
-    }
-
-    @Test
-    public void test02(){
-/*        File file=new File("data/testTxt.txt");
-        try {
-            BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream(file));
-            for(int i=0;i<2000000;i++) {
-                bos.write((i+"---").getBytes());
-                bos.write("\n".getBytes());
-            }
-            bos.flush();
-            bos.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-    }
-    @Test
-    public void test03() {
-/*        for(Map conf:FileUtils.readXml("source_conf")){
+    public void test01() {
+        for(Map conf:FileUtils.readXml("source_conf")){
             try {
                 C3P0Utils c3P0Utils=new C3P0Utils();
-                new DataExecutor(("data/"+conf.get("table")).toLowerCase()).executor(FileUtils.getExecutor((String) conf.get("class")),c3P0Utils.getResultSet((String) conf.get("sql")));
+                new DataExecutor(("data/"+conf.get("table")).toLowerCase()).executor(ObjectUtils.getTransform((String) conf.get("class")),c3P0Utils.getResultSet((String) conf.get("sql")));
                 c3P0Utils.closeConn();
             } catch (Exception e) {
                 e.printStackTrace();
             }
             break;
-        }*/
+        }
     }
 
     @Test
-    public void test04(){
-        System.out.println(MetadataTest.class .getProtectionDomain().getCodeSource().getLocation());
+    public void test02() throws SQLException {
+        for(Map conf:FileUtils.readXml("source_conf")){
+            try {
+                ReadDataHandle readDataHandle = new ReadDataHandle((String)conf.get("class"),(String)conf.get("table"),(String)conf.get("sql"));
+                logger.info(readDataHandle.getSqlCount().toString());
+                readDataHandle.die();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            break;
+        }
     }
+
+    @Test
+    public void test04() throws Exception {
+        WriteDataHandle writeDataHandle = new WriteDataHandle();
+        BufferedOutputStream bw = writeDataHandle.initDataWrite(new File("data/testRow." + DateUtils.getYesterDay() + "." + SUFFIX));
+        bw.write(ObjectUtils.getObjectValues(new People(12,"yang")));
+        bw.flush();
+        bw.close();
+    }
+
 }

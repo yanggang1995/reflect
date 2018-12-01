@@ -1,7 +1,8 @@
 package com.metadata.yg.handle;
 
+import com.metadata.yg.utils.DataUtils;
 import com.metadata.yg.utils.DateUtils;
-import com.metadata.yg.utils.FileUtils;
+import com.metadata.yg.utils.ObjectUtils;
 import com.metadata.yg.utils.StopWatch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -67,15 +68,19 @@ public class WriteDataHandle {
             StopWatch stopWatch = new StopWatch();
             stopWatch.start();
             for (Object dataList : cacheList) {
-                List tmp = (List<String>) dataList;
-                for (int i = 0; i < tmp.size(); i++) {
+                for(Object object:(List)dataList){
+                    bw.write(ObjectUtils.getObjectValues(object));
+                }
+
+                /*for (int i = 0; i < tmp.size(); i++) {
                     bw.write(tmp.get(i).toString().getBytes());
                     if (i == tmp.size() - 1) {
                         break;
                     }
                     bw.write(FileUtils.radixStr(COLUMN, RADIX));
                 }
-                bw.write(FileUtils.radixStr(ROW, RADIX));
+                bw.write(FileUtils.radixStr(ROW, RADIX));*/
+                // TODO: 2018/12/1
                 currItemCount--;
             }
             bw.flush();
@@ -103,9 +108,9 @@ public class WriteDataHandle {
                     if (i == tmp.size() - 1) {
                         break;
                     }
-                    bw.write(FileUtils.radixStr(COLUMN, RADIX));
+                    bw.write(DataUtils.radixStr(COLUMN, RADIX));
                 }
-                bw.write(FileUtils.radixStr(ROW, RADIX));
+                bw.write(DataUtils.radixStr(ROW, RADIX));
             }
             logger.info(String.format("flush线程：%s, 消费完成，消费数据长度：%s", Thread.currentThread().getName(), cacheList.size()));
             cacheList.clear(); // 清空数据

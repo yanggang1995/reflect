@@ -54,7 +54,8 @@ public class C3P0Utils {
             this.rs = this.st.executeQuery(sql);
             return this.rs;
         } catch (SQLException e) {
-            logger.error(e.getMessage());
+            logger.error("查询数据源失败  ---  "+e.getMessage());
+            StopWatch.exitApplication();
         }
         return null;
     }
