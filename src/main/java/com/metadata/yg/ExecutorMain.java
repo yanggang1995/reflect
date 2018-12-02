@@ -5,6 +5,8 @@ import com.metadata.yg.task.DataExecutor;
 import com.metadata.yg.utils.C3P0Utils;
 import com.metadata.yg.utils.FileUtils;
 import com.metadata.yg.utils.ObjectUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
@@ -14,8 +16,10 @@ import java.util.Map;
  * @create: 2018-11-29 16:50
  **/
 public class ExecutorMain {
+    private static final Logger logger = LoggerFactory.getLogger(ExecutorMain.class);
     public static void main(String[] args) {
         System.out.println("PID----："+FileUtils.getPID());
+        logger.info("PID----："+FileUtils.getPID());
         System.out.println(FileUtils.getProjectPath());
         FileUtils.makeOutPath();
         for(Map conf:FileUtils.readXml("source_conf")){

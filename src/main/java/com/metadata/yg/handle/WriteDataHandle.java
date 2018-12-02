@@ -1,7 +1,6 @@
 package com.metadata.yg.handle;
 
-import com.metadata.yg.utils.DataUtils;
-import com.metadata.yg.utils.DateUtils;
+import com.metadata.yg.utils.FileUtils;
 import com.metadata.yg.utils.ObjectUtils;
 import com.metadata.yg.utils.StopWatch;
 import org.slf4j.Logger;
@@ -13,8 +12,6 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-
-import static com.metadata.yg.constant.Conf.*;
 
 public class WriteDataHandle {
     public static final Logger logger = LoggerFactory.getLogger(WriteDataHandle.class);
@@ -55,7 +52,71 @@ public class WriteDataHandle {
         }
     }
 
-    public void save(String path) throws Exception {
+
+    public void save(String outTale) throws Exception {
+        List<BufferedOutputStream> bws = null;
+        try {
+            writeLock.lock();
+            //System.out.println(path + "." + DataUtils.getYesterday() + "." + index + "." + SUFFIX);
+            //bw = initDataWrite(new File(path + "." + DataUtils.getYesterday() + "." + index + "." + SUFFIX));
+            // 如果数据没有超出缓存.则返回.
+            if (!isCacheExpires()) {
+                return;
+            }
+            StopWatch stopWatch = new StopWatch();
+            stopWatch.start();
+            bws=FileUtils.getBwWithoutpath(outTale);
+            for (Object dataListObject : cacheList) {
+                List datalist=(List)dataListObject;
+                for(int i=0;i<bws.size();i++){
+                    bws.get(i).write(ObjectUtils.getObjectValues(datalist.get(i)));
+                }
+
+            /*for (int i = 0; i < tmp.size(); i++) {
+                bw.write(tmp.get(i).toString().getBytes());
+                if (i == tmp.size() - 1) {
+                    break;
+                }
+                bw.write(FileUtils.radixStr(COLUMN, RADIX));
+            }
+            bw.write(FileUtils.radixStr(ROW, RADIX));*/
+                // TODO: 2018/12/1
+                currItemCount--;
+            }
+            FileUtils.flushBws(bws);
+            stopWatch.stop();
+            logger.info(String.format("%s，消费完成，耗费时间:%s ms,消费数据长度:%s", Thread.currentThread().getName(), stopWatch.getTime(),
+                    cacheList.size()));
+            cacheList.clear(); // 清空数据.
+            index++;
+        } finally {
+            FileUtils.closeBws(bws);
+            writeLock.unlock();
+        }
+    }
+
+    public void flush(String outTale) throws Exception {
+        List<BufferedOutputStream> bws = null;
+        try {
+            // 如果数据没有超出缓存.则返回.
+            if (!isCacheExpires()) {
+                return;
+            }
+            bws = FileUtils.getBwWithoutpath(outTale);
+            for (Object dataListObject : cacheList) {
+                List datalist = (List) dataListObject;
+                for (int i = 0; i < bws.size(); i++) {
+                    bws.get(i).write(ObjectUtils.getObjectValues(datalist.get(i)));
+                }
+            }
+            FileUtils.flushBws(bws);
+            logger.info(String.format("flush线程：%s, 消费完成，消费数据长度：%s", Thread.currentThread().getName(), cacheList.size()));
+            cacheList.clear();
+        }finally {
+            FileUtils.closeBws(bws);
+        }
+    }
+    /*public void save(String path) throws Exception {
         BufferedOutputStream bw = null;
         try {
             writeLock.lock();
@@ -72,14 +133,14 @@ public class WriteDataHandle {
                     bw.write(ObjectUtils.getObjectValues(object));
                 }
 
-                /*for (int i = 0; i < tmp.size(); i++) {
+                *//*for (int i = 0; i < tmp.size(); i++) {
                     bw.write(tmp.get(i).toString().getBytes());
                     if (i == tmp.size() - 1) {
                         break;
                     }
                     bw.write(FileUtils.radixStr(COLUMN, RADIX));
                 }
-                bw.write(FileUtils.radixStr(ROW, RADIX));*/
+                bw.write(FileUtils.radixStr(ROW, RADIX));*//*
                 // TODO: 2018/12/1
                 currItemCount--;
             }
@@ -95,9 +156,9 @@ public class WriteDataHandle {
             }
             writeLock.unlock();
         }
-    }
+    }*/
 
-    public void flush(String path) throws Exception {
+    /*public void flush(String path) throws Exception {
         BufferedOutputStream bw = null;
         try {
             bw = initDataWrite(new File(path + "." + DateUtils.getYesterDay() + "." + index + "." + SUFFIX));
@@ -121,7 +182,7 @@ public class WriteDataHandle {
                 closeWrite(bw);
             }
         }
-    }
+    }*/
 
     private void closeWrite(BufferedOutputStream bw) throws Exception {
         bw.flush();

@@ -121,4 +121,47 @@ public class FileUtils {
             filePath = filePath.substring(0, filePath.lastIndexOf("/"));
         return new File(filePath).getAbsolutePath();
     }
+
+    /**
+     * 根据source.xml中配置table创建对应的输出流
+     * @param outTable
+     * @return 输出流列表
+     * @throws FileNotFoundException
+     */
+    public static List<BufferedOutputStream> getBwWithoutpath(String outTable) throws FileNotFoundException {
+        String [] outs = outTable.split("/");
+        List<BufferedOutputStream> bws = new ArrayList<>();
+        for(int i=0;i<outs.length;i++){
+            bws.add(new BufferedOutputStream(new FileOutputStream(new File(Conf.OUTPATH)+"/"+outs[i])));
+        }
+        return bws;
+    }
+
+    /**
+     * flush输出流列表中的所有输出流
+     * @param bws
+     */
+    public static void flushBws(List<BufferedOutputStream> bws){
+        for (int i=0;i<bws.size();i++){
+            try {
+                bws.get(i).flush();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * 关闭输出流列表中的所有输出流
+     * @param bws
+     */
+    public static void closeBws(List<BufferedOutputStream> bws){
+        for (int i=0;i<bws.size();i++){
+            try {
+                bws.get(i).close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
