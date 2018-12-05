@@ -1,6 +1,5 @@
 package com.metadata.yg;
 
-import com.metadata.yg.constant.Conf;
 import com.metadata.yg.task.DataExecutor;
 import com.metadata.yg.utils.C3P0Utils;
 import com.metadata.yg.utils.FileUtils;
@@ -25,7 +24,7 @@ public class ExecutorMain {
         for(Map conf:FileUtils.readXml("source_conf")){
             try {
                 C3P0Utils c3P0Utils=new C3P0Utils();
-                new DataExecutor((Conf.OUTPATH+"/"+conf.get("table")).toLowerCase()).executor(ObjectUtils.getTransform((String) conf.get("class")),c3P0Utils.getResultSet((String) conf.get("sql")));
+                new DataExecutor((""+conf.get("table")).toLowerCase()).executor(ObjectUtils.getTransform((String) conf.get("class")),c3P0Utils.getResultSet((String) conf.get("sql")));
                 c3P0Utils.closeConn();
             } catch (Exception e) {
                 e.printStackTrace();

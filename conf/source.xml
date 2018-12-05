@@ -2,7 +2,7 @@
     <source_conf>
         <class>com.metadata.yg.transform.impl.defaultTransform</class>
         <table>NNS_USER</table>
-        <sql>select day from cnt_user_active where day=20181123</sql>
+        <sql>select video_id,video_name from hive.starcor.heartbeat_log where day=20181203 limit 200000</sql>
     </source_conf>
     <source_conf>
         <class>com.metadata.yg.transform.impl.defaultTransform</class>

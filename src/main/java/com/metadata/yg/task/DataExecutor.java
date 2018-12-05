@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -52,11 +53,14 @@ public class DataExecutor {
                         threadResultList.clear(); // 清空
                         currThreadCount = threadResultList.size();
                     }
-                    Future<String> future = threadPool.submit(new TaskWithResult(writeDataFile, dataFile));
-                    threadResultList.add(future);
+                    threadPool.execute(new TaskWithResult(writeDataFile, dataFile));
+//                    Future<String> future = threadPool.submit(new TaskWithResult(writeDataFile, dataFile));
+//                    threadResultList.add(future);
                 }
-            } catch (Exception e) {
-                logger.info("-----录入数据异常-----", e.getMessage());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
             }
             return null;
         }, executor, rs);
@@ -78,7 +82,7 @@ public class DataExecutor {
         while (rs.next()) {
             List<byte []> tmp = new ArrayList<>();
             for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
-                tmp.add(rs.getObject(i).toString().getBytes());
+                tmp.add((rs.getObject(i)==null?"":rs.getObject(i)).toString().getBytes());
             }
             num++;
             callBack.call(num, transform.getFormatRow(tmp));

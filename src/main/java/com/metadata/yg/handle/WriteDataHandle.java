@@ -57,37 +57,24 @@ public class WriteDataHandle {
         List<BufferedOutputStream> bws = null;
         try {
             writeLock.lock();
-            //System.out.println(path + "." + DataUtils.getYesterday() + "." + index + "." + SUFFIX);
-            //bw = initDataWrite(new File(path + "." + DataUtils.getYesterday() + "." + index + "." + SUFFIX));
             // 如果数据没有超出缓存.则返回.
             if (!isCacheExpires()) {
                 return;
             }
             StopWatch stopWatch = new StopWatch();
             stopWatch.start();
-            bws=FileUtils.getBwWithoutpath(outTale);
-            for (Object dataListObject : cacheList) {
-                List datalist=(List)dataListObject;
+            bws=FileUtils.getBwWithoutpath(outTale,index);
+            for (int k=0;k<cacheList.size();k++) {
+                List datalist=(List)cacheList.get(k);
                 for(int i=0;i<bws.size();i++){
                     bws.get(i).write(ObjectUtils.getObjectValues(datalist.get(i)));
                 }
-
-            /*for (int i = 0; i < tmp.size(); i++) {
-                bw.write(tmp.get(i).toString().getBytes());
-                if (i == tmp.size() - 1) {
-                    break;
-                }
-                bw.write(FileUtils.radixStr(COLUMN, RADIX));
-            }
-            bw.write(FileUtils.radixStr(ROW, RADIX));*/
-                // TODO: 2018/12/1
                 currItemCount--;
             }
             FileUtils.flushBws(bws);
             stopWatch.stop();
-            logger.info(String.format("%s，消费完成，耗费时间:%s ms,消费数据长度:%s", Thread.currentThread().getName(), stopWatch.getTime(),
-                    cacheList.size()));
-            cacheList.clear(); // 清空数据.
+            logger.info(String.format("%s，消费完成，耗费时间:%s ms,消费数据长度:%s", Thread.currentThread().getName(), stopWatch.getTime(), cacheList.size()));
+            cacheList.clear();
             index++;
         } finally {
             FileUtils.closeBws(bws);
@@ -99,12 +86,10 @@ public class WriteDataHandle {
         List<BufferedOutputStream> bws = null;
         try {
             // 如果数据没有超出缓存.则返回.
-            if (!isCacheExpires()) {
-                return;
-            }
-            bws = FileUtils.getBwWithoutpath(outTale);
-            for (Object dataListObject : cacheList) {
-                List datalist = (List) dataListObject;
+            bws = FileUtils.getBwWithoutpath(outTale,index);
+            logger.info(bws.toString());
+            for (int k=0;k<cacheList.size();k++) {
+                List datalist = (List) cacheList.get(k);
                 for (int i = 0; i < bws.size(); i++) {
                     bws.get(i).write(ObjectUtils.getObjectValues(datalist.get(i)));
                 }
@@ -113,7 +98,9 @@ public class WriteDataHandle {
             logger.info(String.format("flush线程：%s, 消费完成，消费数据长度：%s", Thread.currentThread().getName(), cacheList.size()));
             cacheList.clear();
         }finally {
-            FileUtils.closeBws(bws);
+            if(bws!=null) {
+                FileUtils.closeBws(bws);
+            }
         }
     }
     /*public void save(String path) throws Exception {

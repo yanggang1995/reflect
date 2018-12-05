@@ -2,9 +2,8 @@ package com.metadata.yg.task;
 
 import com.metadata.yg.handle.WriteDataHandle;
 
-import java.util.concurrent.Callable;
-
-public class TaskWithResult implements Callable<String> {
+public class TaskWithResult implements Runnable {
+//public class TaskWithResult implements Callable<String> {
     private WriteDataHandle handle;
 
     private String path;
@@ -15,9 +14,14 @@ public class TaskWithResult implements Callable<String> {
     }
 
     @Override
-    public String call() throws Exception {
-        String fileName = Thread.currentThread().getName();
-        handle.save(path);
-        return fileName;
+    public void run()  {
+//    public String call(){
+//        String fileName = Thread.currentThread().getName();
+        try {
+            handle.save(path);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+//        return fileName;
     }
 }

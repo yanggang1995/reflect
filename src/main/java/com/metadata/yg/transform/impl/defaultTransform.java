@@ -14,7 +14,7 @@ public class defaultTransform implements MetadataTransform {
 //        formatList.add("ygID"+row.get(1));
 //        formatList.add("ygID"+row.get(2));
         formatList.add("ygID_yg");*/
-        formatList.add(new People(10,"ygID"));
+        formatList.add(new People(1,new String(row.get(0)),new String(row.get(1))));
         return formatList;
     }
 }

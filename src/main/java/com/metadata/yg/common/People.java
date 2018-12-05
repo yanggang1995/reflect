@@ -17,4 +17,10 @@ public class People {
         this.age = age;
         this.name = name;
     }
+
+    public People(int age, String name,String sex) {
+        this.age = age;
+        this.name = name;
+        this.sex = sex;
+    }
 }
