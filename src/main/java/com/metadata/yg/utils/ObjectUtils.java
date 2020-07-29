@@ -44,7 +44,7 @@ public class ObjectUtils {
             f.setAccessible(true); // 设置些属性是可以访问的
             String val = "";
             try {
-                val = f.get(object).toString();  // 得到此属性的值
+                val = new String((byte [])f.get(object));  // 得到此属性的值
             } catch (Exception e) {
                 logger.error("未获取到" + objectCla.getName() + "属性" + f.getName() + "的值");
             }
@@ -55,5 +55,10 @@ public class ObjectUtils {
         }
         row = DataUtils.byteMerger(row, DataUtils.radixStr(ROW, RADIX));
         return row;
+    }
+
+    public static String getClassName(Object object){
+        String [] classFullName=object.getClass().getName().split("\\.");
+        return classFullName[classFullName.length-1].toUpperCase();
     }
 }

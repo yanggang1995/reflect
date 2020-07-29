@@ -2,17 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbc7e795-bc30-4945-85ed-84d671436587" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/YG.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/config.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/makeData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/product.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/zproduct.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/QueueMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BUserinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BasInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BcountInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ContentC2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Contentviewlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/INSERV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Marketlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Orderlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ProductInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Schedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/StbInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserInfoReal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserLogonInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserOperEpgInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserlogoutInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Videoqualitylog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZContentC2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZContentviewlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZIncomeinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZProductInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZuserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/common/nns_user.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/consumer/FileConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/enums/SERVICE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/enums/STB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/enums/Surname.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/inf/QueueCallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/producer/DataProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/producer/MakeDataProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/QueueExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/BJLTTransform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/RandomUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/source.xml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/source.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/testRow.20181130.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.home_IS_UNDEFINED/rolling.2018-11-30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dataFile.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/testTxt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/metadata.2018-11-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rolling.2018-12-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rolling.2018-12-02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rolling.2018-12-04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/rolling.2018-12-05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/ExecutorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/ExecutorMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/common/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/common/People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/constant/Conf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/constant/Conf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/DataExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/DataExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/TaskWithResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/TaskWithResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/defaultTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/defaultTransform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DataUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DataUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DateUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/ObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/ObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/Logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/Logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MetadataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MetadataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assembly.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/ExecutorMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/ExecutorMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/constant/Conf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/constant/Conf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/handle/WriteDataHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/handle/WriteDataHandle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/task/DataExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/task/DataExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/task/TaskWithResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/task/TaskWithResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/transform/impl/defaultTransform.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/transform/impl/defaultTransform.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/DataUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/DataUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/DateUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/FileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/FileUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/ObjectUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/ObjectUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/StopWatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/metadata/yg/utils/StopWatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MetadataTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,55 +93,83 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/reflect$ExecutorMain.ic" NAME="ExecutorMain Coverage Results" MODIFIED="1546571329264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.metadata.yg.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Conf.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/constant/Conf.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/FileUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="167" column="9" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExecutorMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DataUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1102">
+              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file leaf-file-name="ExecutorMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/ExecutorMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rolling.2018-12-04.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/rolling.2018-12-04.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3667">
-              <caret line="193" column="68" selection-start-line="193" selection-start-column="68" selection-end-line="193" selection-end-column="68" />
-            </state>
-          </provider>
+      <file leaf-file-name="assembly.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resource/assembly.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="source.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/source.xml">
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resource/META-INF/MANIFEST.MF">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="DateUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DateUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="People.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/common/People.java">
+      <file leaf-file-name="config.bak" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/config.bak">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="437">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -82,55 +177,8 @@
       <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataExecutor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/task/DataExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskWithResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/task/TaskWithResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="defaultTransform.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/defaultTransform.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WriteDataHandle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="90" column="50" lean-forward="true" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -140,10 +188,44 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Byte</find>
+      <find>byte</find>
+      <find>path</find>
+      <find>baseuser</find>
+      <find>bUserinfo</find>
+      <find>zProductInfo</find>
+      <find>Base</find>
+      <find>B:q</find>
+      <find>buser</find>
+      <find>INser</find>
+      <find>static</find>
+      <find>userinfo</find>
+      <find>&quot;[&quot;+</find>
+      <find>&quot;]&quot;</find>
+      <find>().</find>
+      <find>()</find>
+      <find>=().</find>
+      <find>+)</find>
+      <find>&quot;[&quot; +</find>
+      <find>]</find>
+      <find>setCityCode</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>byte</replace>
+      <replace>&quot;&quot;</replace>
+      <replace>&quot;&quot;.</replace>
+      <replace>=&quot;&quot;.</replace>
+      <replace>)</replace>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -151,42 +233,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/inf/Metadataxecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/readXml.java" />
-        <option value="$PROJECT_DIR$/src/test/java/many.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TBuilderRoomSqlFileTool.java" />
-        <option value="$PROJECT_DIR$/data/dataFile.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/TBuilderRoomSqlFileTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/inf/CallBack.java" />
-        <option value="$PROJECT_DIR$/conf/c3p0-config.xml" />
-        <option value="$PROJECT_DIR$/conf/config.propertites" />
-        <option value="$PROJECT_DIR$/src/main/resource/assembly.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resource/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/source/DataSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/constant/Conf.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/Logback.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/StopWatch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/C3P0Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/ReadDataHandle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/impl/XjcbcExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/inf/MetadataExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/impl/nmggdExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/nmggdExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/defaultExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DataUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MetadataTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/ObjectUtils.java" />
-        <option value="$PROJECT_DIR$/conf/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/defaultTransform.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/common/People.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/ExecutorMain.java" />
-        <option value="$PROJECT_DIR$/conf/source.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/FileUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/DataExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/producer/MakeDataProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/TaskWithResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/producer/DataProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/inf/QueueCallBack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/QueueMain.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/Logback.xml" />
+        <option value="$PROJECT_DIR$/conf/sxlt.json" />
+        <option value="$PROJECT_DIR$/conf/zproduct.json" />
+        <option value="$PROJECT_DIR$/conf/product.json" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BaseInfo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MetadataTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/enums/STB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZProductInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZIncomeinfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Videoqualitylog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserOperEpgInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserLogonInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Schedule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ProductInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Marketlog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ContentC2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BUserinfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BcountInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BasInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/ObjectUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/RandomUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/QueueExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/task/DataExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/ReadDataHandle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/consumer/FileConsumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/ExecutorMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/StbInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserInfoReal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZContentC2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/INSERV.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Contentviewlog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/BJLTTransform.java" />
+        <option value="$PROJECT_DIR$/conf/config.properties" />
+        <option value="$PROJECT_DIR$/conf/config.bak" />
+        <option value="$PROJECT_DIR$/conf/makeData.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZContentviewlog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DataUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZuserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Orderlog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/constant/Conf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/FileUtils.java" />
       </list>
     </option>
   </component>
@@ -215,11 +312,6 @@
           <item name="reflect" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="reflect" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -227,10 +319,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="5" />
-    <option name="width" value="1920" />
-    <option name="height" value="1030" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1943" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -242,6 +335,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,11 +348,6 @@
               <item name="reflect" type="b2602c69:ProjectViewProjectNode" />
               <item name="reflect" type="462c0819:PsiDirectoryNode" />
               <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="reflect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="reflect" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reflect" type="b2602c69:ProjectViewProjectNode" />
@@ -315,6 +405,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yg" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reflect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yg" type="462c0819:PsiDirectoryNode" />
               <item name="handle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,7 +423,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yg" type="462c0819:PsiDirectoryNode" />
-              <item name="inf" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="reflect" type="b2602c69:ProjectViewProjectNode" />
@@ -395,11 +494,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="serviceId&#9;PSI&#9;JAVA://com.metadata.yg.bjlt.ZuserInfo#ServiceID&#10;stbId&#9;PSI&#9;JAVA://com.metadata.yg.bjlt.UserInfo#STBID&#10;Create_Time&#9;PSI&#9;JAVA://com.metadata.yg.common.nns_user#getNns_iptv_create_time&#10;elephone&#9;PSI&#9;JAVA://com.metadata.yg.common.nns_user#nns_telephone&#10;CP_Balance&#9;PSI&#9;JAVA://com.metadata.yg.bjlt.ProductInfo#CP_Balance&#10;Fee&#9;PSI&#9;JAVA://com.metadata.yg.bjlt.Orderlog#Fee&#10;EndTime&#9;PSI&#9;JAVA://com.metadata.yg.bjlt.Contentviewlog#EndTime&#10;Flux&#9;PSI&#9;JAVA://com.metadata.yg.bjlt.Contentviewlog#Flux&#10;stb&#9;PSI&#9;JAVA://com.metadata.yg.enums.STB&#10;ValidTime&#9;PSI&#9;JAVA://com.metadata.yg.bjlt.Orderlog#ValidTime" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -408,13 +506,17 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\YG\project\reflect\src\main\resource\META-INF" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.metadata.yg.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\YG\project\reflect\conf" />
       <recent name="D:\YG\project\reflect\src\main\resource" />
       <recent name="D:\YG\project\reflect\src\test" />
     </key>
@@ -432,6 +534,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.ExecutorMain">
+    <configuration name="DataUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.metadata.yg.utils.DataUtils" />
+      <module name="reflect" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.metadata.yg.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.metadata.yg.utils.DateUtils" />
+      <module name="reflect" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.metadata.yg.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="ExecutorMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.metadata.yg.ExecutorMain" />
       <module name="reflect" />
@@ -443,38 +567,16 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="TBuilderRoomSqlFileTool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TBuilderRoomSqlFileTool" />
-      <module name="reflect" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="MetadataTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MetadataTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reflect" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MetadataTest" />
-      <option name="METHOD_NAME" value="test02" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MetadataTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reflect" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MetadataTest" />
-      <option name="METHOD_NAME" value="test03" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -492,6 +594,23 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MetadataTest" />
       <option name="METHOD_NAME" value="test04" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MetadataTest.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reflect" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MetadataTest" />
+      <option name="METHOD_NAME" value="test11" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -523,9 +642,9 @@
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="192.168.90.96" />
-      <option name="PORT" value="9528" />
+      <option name="PORT" value="9527" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="9528" />
+        <option name="DEBUG_PORT" value="9527" />
         <option name="LOCAL" value="false" />
       </RunnerSettings>
     </configuration>
@@ -613,21 +732,23 @@
       <item itemvalue="JUnit.MetadataTest.test04" />
       <item itemvalue="Remote.metadata" />
       <item itemvalue="Application.ExecutorMain" />
-      <item itemvalue="Application.TBuilderRoomSqlFileTool" />
-      <item itemvalue="JUnit.MetadataTest.test02" />
-      <item itemvalue="JUnit.MetadataTest.test03" />
+      <item itemvalue="JUnit.MetadataTest.test01" />
+      <item itemvalue="JUnit.MetadataTest.test11" />
+      <item itemvalue="Application.DataUtils" />
+      <item itemvalue="Application.DateUtils" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ExecutorMain" />
-        <item itemvalue="JUnit.MetadataTest.test03" />
-        <item itemvalue="JUnit.MetadataTest.test02" />
-        <item itemvalue="Application.TBuilderRoomSqlFileTool" />
+        <item itemvalue="Application.DataUtils" />
+        <item itemvalue="Application.DateUtils" />
+        <item itemvalue="JUnit.MetadataTest.test01" />
+        <item itemvalue="JUnit.MetadataTest.test11" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\YG\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -641,64 +762,86 @@
       <workItem from="1543286008599" duration="5099000" />
       <workItem from="1543297358489" duration="80975000" />
       <workItem from="1543916409619" duration="12909000" />
-      <workItem from="1544012370319" duration="4780000" />
+      <workItem from="1544012370319" duration="10234000" />
+      <workItem from="1544929040588" duration="8859000" />
+      <workItem from="1545016390964" duration="712000" />
+      <workItem from="1545879630858" duration="72626000" />
+      <workItem from="1546079559633" duration="80640000" />
+      <workItem from="1546569447743" duration="11420000" />
+      <workItem from="1546679284247" duration="11805000" />
+      <workItem from="1546843411811" duration="480000" />
+      <workItem from="1547271302963" duration="2662000" />
+      <workItem from="1547438083831" duration="3642000" />
+      <workItem from="1547518345751" duration="1955000" />
+      <workItem from="1547694752574" duration="589000" />
+      <workItem from="1548050734346" duration="1266000" />
+      <workItem from="1548124459235" duration="6660000" />
+      <workItem from="1548234207709" duration="3630000" />
+      <workItem from="1548334081025" duration="7004000" />
+      <workItem from="1548831642248" duration="11660000" />
+      <workItem from="1552308676158" duration="2212000" />
+      <workItem from="1553247714813" duration="621000" />
+      <workItem from="1554886569051" duration="771000" />
+      <workItem from="1555210138511" duration="704000" />
+      <workItem from="1555297363185" duration="475000" />
+      <workItem from="1557297192499" duration="1224000" />
+      <workItem from="1557393462360" duration="695000" />
+      <workItem from="1557729350085" duration="1771000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MetadataTest_test03 - 2018.12.01 at 17h 14m 34s.xml">
-      <configuration name="MetadataTest.test03" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test01 - 2019.01.04 at 14h 50m 05s.xml">
+      <configuration name="MetadataTest.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test03 - 2018.12.01 at 17h 14m 41s.xml">
-      <configuration name="MetadataTest.test03" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test01 - 2019.01.04 at 14h 57m 20s.xml">
+      <configuration name="MetadataTest.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test03 - 2018.12.01 at 17h 16m 41s.xml">
-      <configuration name="MetadataTest.test03" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test01 - 2019.01.04 at 15h 09m 55s.xml">
+      <configuration name="MetadataTest.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test03 - 2018.12.01 at 17h 16m 53s.xml">
-      <configuration name="MetadataTest.test03" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test01 - 2019.01.04 at 15h 12m 46s.xml">
+      <configuration name="MetadataTest.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test03 - 2018.12.01 at 17h 38m 31s.xml">
-      <configuration name="MetadataTest.test03" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test11 - 2019.01.05 at 17h 28m 09s.xml">
+      <configuration name="MetadataTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test03 - 2018.12.01 at 17h 38m 56s.xml">
-      <configuration name="MetadataTest.test03" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test11 - 2019.01.05 at 18h 47m 36s.xml">
+      <configuration name="MetadataTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test04 - 2018.12.01 at 18h 28m 41s.xml">
-      <configuration name="MetadataTest.test04" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test11 - 2019.01.05 at 18h 48m 58s.xml">
+      <configuration name="MetadataTest.test11" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test04 - 2018.12.01 at 18h 46m 00s.xml">
-      <configuration name="MetadataTest.test04" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test01 - 2019.01.22 at 15h 15m 59s.xml">
+      <configuration name="MetadataTest.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test04 - 2018.12.01 at 18h 48m 37s.xml">
-      <configuration name="MetadataTest.test04" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test01 - 2019.01.22 at 15h 16m 54s.xml">
+      <configuration name="MetadataTest.test01" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MetadataTest_test04 - 2018.12.01 at 18h 50m 48s.xml">
-      <configuration name="MetadataTest.test04" configurationId="JUnit" />
+    <history-entry file="MetadataTest_test01 - 2019.01.22 at 15h 30m 27s.xml">
+      <configuration name="MetadataTest.test01" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136765000" />
+    <option name="totallyTimeSpent" value="376302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.24964337" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.11394102" />
+      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.4978166" visible="true" weight="0.07640751" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30099857" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.78459346" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28485253" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18699732" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="SciView" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -706,14 +849,47 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.49072754" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21540657" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.34094152" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5021834" side_tool="true" weight="0.13605899" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3266762" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21968617" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3266762" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.489301" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.34236804" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.2351314" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -725,406 +901,282 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/MetadataTest.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/ReadDataHandle.java</url>
           <line>35</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java</url>
-          <line>85</line>
+          <url>file://$PROJECT_DIR$/src/test/java/MetadataTest.java</url>
+          <line>31</line>
           <properties />
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java</url>
-          <line>96</line>
+          <line>71</line>
           <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="62" />
+          <option name="timeStamp" value="189" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="66" />
+      <option name="time" value="196" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>isCacheExpires()</expression-string>
+        <expression-string>tableMap.get(((String) key).toUpperCase())</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rs.next()</expression-string>
+        <expression-string>tableNums</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>path</expression-string>
+        <expression-string>datalist.get(i)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>outTale</expression-string>
+        <expression-string>queue.isEmpty()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rs.getObject(i)</expression-string>
+        <expression-string>tableNums.get(key)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rs.getObject(i).toString()</expression-string>
+        <expression-string>(int) tableNums.get(key)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>rs.getObject(i).toString().getBytes()</expression-string>
+        <expression-string>index</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>.getBytes()</expression-string>
+        <expression-string>key.toString().toUpperCase().equals(ObjectUtils.getClassName(bUserinfo))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>getConnection()</expression-string>
+        <expression-string>Math.ceil(max/DATACACHENUM)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/test.3.csv" />
-    <entry file="file://$PROJECT_DIR$/data/testTxt.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/consumer/FileConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        <state relative-caret-position="194">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test.0.csv" />
-    <entry file="file://$PROJECT_DIR$/data/test.1.csv" />
-    <entry file="file://$PROJECT_DIR$/data/test.19.csv" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/io/FileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3211">
-          <caret line="193" column="11" selection-start-line="193" selection-start-column="11" selection-end-line="193" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataFile.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test.20181126.0.csv" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/mchange/c3p0/0.9.5.2/c3p0-0.9.5.2.jar!/com/mchange/v2/c3p0/ComboPooledDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/c3p0-config.xml" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/sql/DriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5377">
-          <caret line="314" selection-start-line="314" selection-end-line="314" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resource/c3p0-config.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resource/c3p0-config.xml" />
-    <entry file="file://$PROJECT_DIR$/data/cnt_user_active.20181126.0.csv" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/metadata.2018-11-29.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="109" selection-start-line="14" selection-start-column="109" selection-end-line="14" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/inf/CallBack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BUserinfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/assembly.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/BasInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="600">
+          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/data/BaseInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/ProductInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/BUserinfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/ContentC2.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Contentviewlog.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/INSERV.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Marketlog.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Schedule.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/StbInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/StbInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1608">
-          <caret line="125" column="10" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
+        <state relative-caret-position="79">
+          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/source/DataSource.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/constant/Conf.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log.home_IS_UNDEFINED/rolling.2018-11-30.log">
+    <entry file="file://$PROJECT_DIR$/data/userinfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/UserInfoReal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/UserInfoReal.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/UserLogonInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/UserlogoutInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/UserOperEpgInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/Videoqualitylog.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/ZContentC2.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/ZContentviewlog.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/ZIncomeinfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/ZProductInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/ZuserInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZContentC2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="50" column="68" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/INSERV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ContentC2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/BJLTTransform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="197" column="59" selection-start-line="197" selection-start-column="59" selection-end-line="197" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/product.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/StopWatch.java">
+    <entry file="file://$PROJECT_DIR$/data/BasInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/data/BcountInfo.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/logs/rolling.2019-01-30.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="-120">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/reflect/Field.java">
+    <entry file="file://$PROJECT_DIR$/conf/makeData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+        <state relative-caret-position="266">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Class.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/RandomUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9616">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        <state relative-caret-position="95">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/rolling.2018-12-01.log">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZContentviewlog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-449" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/impl/XjcbcExecutor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/MetadataTransform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="-7">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/ReadDataHandle.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Contentviewlog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1218#1219#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="817">
+          <caret line="50" column="82" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DataUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/ZuserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="931">
+          <caret line="60" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MetadataTest.java">
+    <entry file="file://$PROJECT_DIR$/data/Orderlog.20190109.csv" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/bjlt/Orderlog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="494">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/constant/Conf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/Logback.xml">
+    <entry file="file://$PROJECT_DIR$/conf/config.bak">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/ObjectUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/C3P0Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/rolling.2018-12-02.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/common/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="437">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="323">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/nns_user.20181203.csv" />
-    <entry file="file://$PROJECT_DIR$/conf/source.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/DataUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
+        <state relative-caret-position="1102">
+          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/rolling.2018-12-04.log">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/assembly.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3667">
-          <caret line="193" column="68" selection-start-line="193" selection-start-column="68" selection-end-line="193" selection-end-column="68" />
+        <state relative-caret-position="247">
+          <caret line="82" column="34" lean-forward="true" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/ExecutorMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="167" column="9" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/rolling.2018-12-05.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="33211" selection-start-line="33211" selection-end-line="33211" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/concurrent/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/handle/WriteDataHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="90" column="50" lean-forward="true" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="632" column="16" selection-start-line="632" selection-start-column="16" selection-end-line="632" selection-end-column="16" />
-          <folding>
-            <element signature="e#26222#26223#0" expanded="true" />
-            <element signature="e#26265#26266#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/task/DataExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/task/TaskWithResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/metadata/yg/transform/impl/defaultTransform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>

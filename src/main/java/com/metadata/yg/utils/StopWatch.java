@@ -23,6 +23,6 @@ public class StopWatch {
 
     public static void exitApplication(){
         logger.error("-------------------程序终止-------------------");
-        System.exit(0);
+        System.exit(-1);
     }
 }

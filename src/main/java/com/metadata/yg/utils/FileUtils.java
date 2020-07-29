@@ -74,7 +74,8 @@ public class FileUtils {
     public static Properties getConfig(){
         Properties props = new Properties();
         try {
-            FileInputStream in = new FileInputStream(CONFIGPATH);
+            FileInputStream in = new FileInputStream(getProjectPath()+"/"+"conf/config.properties");
+//            FileInputStream in = new FileInputStream("conf/config.properties");
             props.load(in);
             in.close();
         } catch (FileNotFoundException e) {
@@ -128,11 +129,12 @@ public class FileUtils {
      * @return 输出流列表
      * @throws FileNotFoundException
      */
-    public static List<BufferedOutputStream> getBwWithoutpath(String outTable,Integer index) throws FileNotFoundException {
+    public static List<BufferedOutputStream> getBwWithoutpath(String outTable,Integer index,boolean isSplit) throws FileNotFoundException {
         String [] outs = outTable.split("/");
+        String splitStr=isSplit?"."+index:"";
         List<BufferedOutputStream> bws = new ArrayList<>();
         for(int i=0;i<outs.length;i++){
-            bws.add(new BufferedOutputStream(new FileOutputStream(new File(Conf.OUTPATH)+"/"+outs[i]+"."+DateUtils.getYesterDay()+"."+index+"."+Conf.SUFFIX)));
+            bws.add(new BufferedOutputStream(new FileOutputStream(new File(Conf.OUTPATH)+"/"+outs[i]+"."+Conf.fileDay+splitStr+"."+Conf.SUFFIX,true)));
         }
         return bws;
     }
@@ -165,6 +167,23 @@ public class FileUtils {
                     e.printStackTrace();
                 }
             }
+        }
+    }
+
+    public static void deleteNullFile(String path){
+        File f= new File(path);
+        if (f.exists() && f.isDirectory()){
+            File [] files=f.listFiles();
+            for(File file:files){
+                if(file.isFile()){
+                    if(file.length()==0){
+                        file.delete();
+                    }
+                }
+            }
+            logger.info("空文件已清除");
+        }else{
+            logger.info("fileDirectory doesn't exist or is not a fileDirectory");
         }
     }
 }

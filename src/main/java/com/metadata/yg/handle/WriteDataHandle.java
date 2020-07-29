@@ -1,5 +1,6 @@
 package com.metadata.yg.handle;
 
+import com.metadata.yg.constant.Conf;
 import com.metadata.yg.utils.FileUtils;
 import com.metadata.yg.utils.ObjectUtils;
 import com.metadata.yg.utils.StopWatch;
@@ -11,12 +12,16 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import static com.metadata.yg.utils.DataUtils.getKeyString;
 
 public class WriteDataHandle {
     public static final Logger logger = LoggerFactory.getLogger(WriteDataHandle.class);
 
     public static int index = 0;
+    public static String flushPath;
 
     private ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock();//读写锁
 
@@ -54,6 +59,7 @@ public class WriteDataHandle {
 
 
     public void save(String outTale) throws Exception {
+        this.flushPath=outTale;
         List<BufferedOutputStream> bws = null;
         try {
             writeLock.lock();
@@ -63,11 +69,19 @@ public class WriteDataHandle {
             }
             StopWatch stopWatch = new StopWatch();
             stopWatch.start();
-            bws=FileUtils.getBwWithoutpath(outTale,index);
+            bws=FileUtils.getBwWithoutpath(outTale,index, Conf.isSplit);
             for (int k=0;k<cacheList.size();k++) {
                 List datalist=(List)cacheList.get(k);
-                for(int i=0;i<bws.size();i++){
-                    bws.get(i).write(ObjectUtils.getObjectValues(datalist.get(i)));
+                int i = 0;
+                try {
+                    for ( ;i < bws.size(); i++) {
+                        if (datalist.get(i) instanceof Integer) {
+                            continue;
+                        }
+                        bws.get(i).write(ObjectUtils.getObjectValues(datalist.get(i)));
+                    }
+                }catch (Exception e){
+                    logger.info(outTale.split("/")[i]+"不存在该数据表");
                 }
                 currItemCount--;
             }
@@ -82,16 +96,22 @@ public class WriteDataHandle {
         }
     }
 
-    public void flush(String outTale) throws Exception {
+    public void flush(Map loop) throws Exception {
         List<BufferedOutputStream> bws = null;
         try {
             // 如果数据没有超出缓存.则返回.
-            bws = FileUtils.getBwWithoutpath(outTale,index);
+            bws = FileUtils.getBwWithoutpath(getKeyString(loop),index,Conf.isSplit);
             logger.info(bws.toString());
             for (int k=0;k<cacheList.size();k++) {
-                List datalist = (List) cacheList.get(k);
-                for (int i = 0; i < bws.size(); i++) {
-                    bws.get(i).write(ObjectUtils.getObjectValues(datalist.get(i)));
+                List datalist=(List)cacheList.get(k);
+                try {
+                    for ( int i = 0;i < bws.size(); i++) {
+                        if (datalist.get(i) instanceof Integer) {
+                            continue;
+                        }
+                        bws.get(i).write(ObjectUtils.getObjectValues(datalist.get(i)));
+                    }
+                }catch (Exception e){
                 }
             }
             FileUtils.flushBws(bws);
@@ -120,8 +140,8 @@ public class WriteDataHandle {
                     bw.write(ObjectUtils.getObjectValues(object));
                 }
 
-                *//*for (int i = 0; i < tmp.size(); i++) {
-                    bw.write(tmp.get(i).toString().getBytes());
+                *//*for (int i = 0; i < tmp.size(); i+) {
+                    bw.write(tmp.get(i).toString().getbytes());
                     if (i == tmp.size() - 1) {
                         break;
                     }
@@ -151,8 +171,8 @@ public class WriteDataHandle {
             bw = initDataWrite(new File(path + "." + DateUtils.getYesterDay() + "." + index + "." + SUFFIX));
             for (Object dataList : cacheList) {
                 List tmp = (List<String>) dataList;
-                for (int i = 0; i < tmp.size(); i++) {
-                    bw.write(tmp.get(i).toString().getBytes());
+                for (int i = 0; i < tmp.size(); i+) {
+                    bw.write(tmp.get(i).toString().getbytes());
                     if (i == tmp.size() - 1) {
                         break;
                     }

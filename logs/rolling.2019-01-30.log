@@ -1,0 +1,93 @@
+2019-01-30 15:46:40.386 [main] INFO  com.metadata.yg.ExecutorMain - PID----:13132
+2019-01-30 15:46:40.396 [main] ERROR com.metadata.yg.utils.FileUtils - config.properties不存在
+2019-01-30 15:51:16.588 [main] INFO  com.metadata.yg.ExecutorMain - PID----:2348
+2019-01-30 15:51:16.597 [main] INFO  com.metadata.yg.utils.FileUtils - 文件输出目录：data1
+2019-01-30 15:51:16.776 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 15:52:02.028 [pool-1-thread-27] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-27，消费完成，耗费时间:13129 ms,消费数据长度:100027
+2019-01-30 15:52:32.153 [pool-1-thread-22] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-22，消费完成，耗费时间:10116 ms,消费数据长度:100024
+2019-01-30 15:53:04.280 [pool-1-thread-22] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-22，消费完成，耗费时间:10209 ms,消费数据长度:100023
+2019-01-30 15:53:18.330 [main] INFO  com.metadata.yg.ExecutorMain - PID----:1400
+2019-01-30 15:53:18.339 [main] INFO  com.metadata.yg.utils.FileUtils - 文件输出目录：D://YG//project//reflect//data
+2019-01-30 15:53:18.589 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 15:54:13.975 [pool-1-thread-38] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-38，消费完成，耗费时间:12970 ms,消费数据长度:101190
+2019-01-30 15:54:34.368 [main] INFO  com.metadata.yg.ExecutorMain - PID----:12540
+2019-01-30 15:54:34.534 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 15:54:55.887 [main] INFO  com.metadata.yg.ExecutorMain - PID----:14060
+2019-01-30 15:55:02.818 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 15:56:10.896 [pool-1-thread-28] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-28，消费完成，耗费时间:14239 ms,消费数据长度:100864
+2019-01-30 15:56:46.317 [pool-1-thread-25] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-25，消费完成，耗费时间:10639 ms,消费数据长度:100009
+2019-01-30 15:57:19.813 [pool-1-thread-28] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-28，消费完成，耗费时间:10346 ms,消费数据长度:100024
+2019-01-30 15:57:55.485 [pool-1-thread-28] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-28，消费完成，耗费时间:15762 ms,消费数据长度:100018
+2019-01-30 16:17:40.106 [main] INFO  com.metadata.yg.ExecutorMain - PID----:1844
+2019-01-30 16:17:40.248 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 16:18:12.660 [pool-1-thread-30] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-30，消费完成，耗费时间:8357 ms,消费数据长度:101493
+2019-01-30 16:18:29.607 [pool-1-thread-38] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-38，消费完成，耗费时间:4386 ms,消费数据长度:100016
+2019-01-30 16:18:47.995 [pool-1-thread-28] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-28，消费完成，耗费时间:4764 ms,消费数据长度:100004
+2019-01-30 16:19:04.481 [pool-1-thread-21] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-21，消费完成，耗费时间:4479 ms,消费数据长度:100054
+2019-01-30 16:19:20.229 [pool-1-thread-21] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-21，消费完成，耗费时间:4527 ms,消费数据长度:100031
+2019-01-30 16:19:35.079 [pool-1-thread-21] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-21，消费完成，耗费时间:4409 ms,消费数据长度:100006
+2019-01-30 16:19:49.927 [pool-1-thread-32] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-32，消费完成，耗费时间:4581 ms,消费数据长度:100010
+2019-01-30 16:20:04.709 [pool-1-thread-38] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-38，消费完成，耗费时间:4408 ms,消费数据长度:100005
+2019-01-30 16:20:19.331 [pool-1-thread-24] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-24，消费完成，耗费时间:4379 ms,消费数据长度:100012
+2019-01-30 16:20:33.933 [pool-1-thread-25] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-25，消费完成，耗费时间:4355 ms,消费数据长度:100014
+2019-01-30 16:20:45.595 [pool-1-thread-26] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-26，消费完成，耗费时间:1585 ms,消费数据长度:100000
+2019-01-30 16:20:56.273 [pool-1-thread-23] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-23，消费完成，耗费时间:1586 ms,消费数据长度:100041
+2019-01-30 16:21:06.914 [pool-1-thread-23] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-23，消费完成，耗费时间:1577 ms,消费数据长度:100006
+2019-01-30 16:21:18.384 [pool-1-thread-21] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-21，消费完成，耗费时间:1603 ms,消费数据长度:100005
+2019-01-30 16:21:28.840 [pool-1-thread-33] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-33，消费完成，耗费时间:1578 ms,消费数据长度:100001
+2019-01-30 16:21:39.329 [pool-1-thread-30] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-30，消费完成，耗费时间:1568 ms,消费数据长度:100024
+2019-01-30 16:21:50.612 [pool-1-thread-30] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-30，消费完成，耗费时间:1756 ms,消费数据长度:100016
+2019-01-30 16:22:01.196 [pool-1-thread-29] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-29，消费完成，耗费时间:1654 ms,消费数据长度:100122
+2019-01-30 16:22:11.783 [pool-1-thread-29] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-29，消费完成，耗费时间:1604 ms,消费数据长度:100022
+2019-01-30 16:22:22.831 [pool-1-thread-29] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-29，消费完成，耗费时间:1554 ms,消费数据长度:100001
+2019-01-30 16:22:31.830 [pool-1-thread-32] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-32，消费完成，耗费时间:241 ms,消费数据长度:100026
+2019-01-30 16:22:40.854 [pool-1-thread-32] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-32，消费完成，耗费时间:225 ms,消费数据长度:100028
+2019-01-30 16:22:49.878 [pool-1-thread-32] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-32，消费完成，耗费时间:220 ms,消费数据长度:100002
+2019-01-30 16:22:58.936 [pool-1-thread-35] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-35，消费完成，耗费时间:232 ms,消费数据长度:100005
+2019-01-30 16:23:07.996 [pool-1-thread-34] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-34，消费完成，耗费时间:246 ms,消费数据长度:100006
+2019-01-30 16:23:17.013 [pool-1-thread-24] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-24，消费完成，耗费时间:227 ms,消费数据长度:100047
+2019-01-30 16:23:26.072 [pool-1-thread-22] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-22，消费完成，耗费时间:260 ms,消费数据长度:100030
+2019-01-30 16:23:35.492 [pool-1-thread-22] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-22，消费完成，耗费时间:227 ms,消费数据长度:100104
+2019-01-30 16:23:45.636 [pool-1-thread-22] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-22，消费完成，耗费时间:260 ms,消费数据长度:100036
+2019-01-30 17:05:29.580 [main] INFO  com.metadata.yg.ExecutorMain - PID----:10688
+2019-01-30 17:05:29.681 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 17:06:06.839 [pool-1-thread-30] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-30，消费完成，耗费时间:6565 ms,消费数据长度:100253
+2019-01-30 17:06:28.761 [pool-1-thread-30] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-30，消费完成，耗费时间:7766 ms,消费数据长度:100016
+2019-01-30 17:06:49.830 [pool-1-thread-40] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-40，消费完成，耗费时间:5736 ms,消费数据长度:100034
+2019-01-30 17:07:10.581 [pool-1-thread-40] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-40，消费完成，耗费时间:6123 ms,消费数据长度:100036
+2019-01-30 17:07:28.602 [pool-1-thread-40] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-40，消费完成，耗费时间:5911 ms,消费数据长度:100010
+2019-01-30 17:07:45.386 [pool-1-thread-35] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-35，消费完成，耗费时间:5336 ms,消费数据长度:100047
+2019-01-30 17:08:06.358 [pool-1-thread-36] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-36，消费完成，耗费时间:6748 ms,消费数据长度:100047
+2019-01-30 17:08:26.169 [pool-1-thread-37] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-37，消费完成，耗费时间:5916 ms,消费数据长度:100029
+2019-01-30 17:08:46.578 [pool-1-thread-37] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-37，消费完成，耗费时间:9153 ms,消费数据长度:100012
+2019-01-30 17:09:04.410 [pool-1-thread-31] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-31，消费完成，耗费时间:5978 ms,消费数据长度:100005
+2019-01-30 17:09:18.596 [pool-1-thread-36] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-36，消费完成，耗费时间:2090 ms,消费数据长度:100032
+2019-01-30 17:09:32.258 [pool-1-thread-36] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-36，消费完成，耗费时间:2177 ms,消费数据长度:100004
+2019-01-30 17:09:46.089 [pool-1-thread-25] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-25，消费完成，耗费时间:2214 ms,消费数据长度:100076
+2019-01-30 17:10:00.208 [pool-1-thread-25] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-25，消费完成，耗费时间:1784 ms,消费数据长度:100026
+2019-01-30 17:10:13.379 [pool-1-thread-25] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-25，消费完成，耗费时间:2554 ms,消费数据长度:100027
+2019-01-30 17:10:26.631 [pool-1-thread-25] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-25，消费完成，耗费时间:1871 ms,消费数据长度:100045
+2019-01-30 17:10:39.861 [pool-1-thread-25] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-25，消费完成，耗费时间:1792 ms,消费数据长度:100021
+2019-01-30 17:10:52.283 [pool-1-thread-25] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-25，消费完成，耗费时间:1770 ms,消费数据长度:100003
+2019-01-30 17:11:04.595 [pool-1-thread-28] INFO  com.metadata.yg.handle.WriteDataHandle - pool-1-thread-28，消费完成，耗费时间:1865 ms,消费数据长度:100009
+2019-01-30 17:27:13.295 [main] INFO  com.metadata.yg.ExecutorMain - PID----:11684
+2019-01-30 17:27:13.398 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 17:27:14.453 [main] INFO  com.metadata.yg.handle.WriteDataHandle - [java.io.BufferedOutputStream@5649fd9b, java.io.BufferedOutputStream@6adede5, java.io.BufferedOutputStream@2d928643, java.io.BufferedOutputStream@5025a98f, java.io.BufferedOutputStream@49993335, java.io.BufferedOutputStream@20322d26, java.io.BufferedOutputStream@192b07fd, java.io.BufferedOutputStream@64bfbc86, java.io.BufferedOutputStream@64bf3bbf, java.io.BufferedOutputStream@55d56113, java.io.BufferedOutputStream@148080bb, java.io.BufferedOutputStream@dc24521, java.io.BufferedOutputStream@10bdf5e5, java.io.BufferedOutputStream@6e1ec318, java.io.BufferedOutputStream@7e0b0338, java.io.BufferedOutputStream@617faa95, java.io.BufferedOutputStream@1e127982, java.io.BufferedOutputStream@60c6f5b, java.io.BufferedOutputStream@2038ae61, java.io.BufferedOutputStream@3c0f93f1, java.io.BufferedOutputStream@31dc339b, java.io.BufferedOutputStream@544fe44c]
+2019-01-30 17:27:14.644 [main] INFO  com.metadata.yg.handle.WriteDataHandle - flush线程：main, 消费完成，消费数据长度：1000
+2019-01-30 17:27:14.645 [main] INFO  com.metadata.yg.task.DataExecutor - 任务完成时间:1072 ms
+2019-01-30 17:27:14.646 [main] INFO  com.metadata.yg.utils.FileUtils - 空文件已清除
+2019-01-30 17:27:14.647 [main] INFO  com.metadata.yg.ExecutorMain - 生成结束
+2019-01-30 17:33:34.251 [main] INFO  com.metadata.yg.ExecutorMain - PID----:5300
+2019-01-30 17:33:34.385 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 17:33:35.692 [main] INFO  com.metadata.yg.handle.WriteDataHandle - [java.io.BufferedOutputStream@5649fd9b, java.io.BufferedOutputStream@6adede5, java.io.BufferedOutputStream@2d928643, java.io.BufferedOutputStream@5025a98f, java.io.BufferedOutputStream@49993335, java.io.BufferedOutputStream@20322d26, java.io.BufferedOutputStream@192b07fd, java.io.BufferedOutputStream@64bfbc86, java.io.BufferedOutputStream@64bf3bbf, java.io.BufferedOutputStream@55d56113, java.io.BufferedOutputStream@148080bb, java.io.BufferedOutputStream@dc24521, java.io.BufferedOutputStream@10bdf5e5, java.io.BufferedOutputStream@6e1ec318, java.io.BufferedOutputStream@7e0b0338, java.io.BufferedOutputStream@617faa95, java.io.BufferedOutputStream@1e127982, java.io.BufferedOutputStream@60c6f5b, java.io.BufferedOutputStream@2038ae61, java.io.BufferedOutputStream@3c0f93f1, java.io.BufferedOutputStream@31dc339b, java.io.BufferedOutputStream@544fe44c]
+2019-01-30 17:33:35.970 [main] INFO  com.metadata.yg.handle.WriteDataHandle - flush线程：main, 消费完成，消费数据长度：1000
+2019-01-30 17:33:35.971 [main] INFO  com.metadata.yg.task.DataExecutor - 任务完成时间:1379 ms
+2019-01-30 17:33:35.972 [main] INFO  com.metadata.yg.utils.FileUtils - 空文件已清除
+2019-01-30 17:33:35.976 [main] INFO  com.metadata.yg.ExecutorMain - 生成结束
+2019-01-30 18:10:23.700 [main] INFO  com.metadata.yg.ExecutorMain - PID----:9264
+2019-01-30 18:10:23.822 [main] INFO  com.metadata.yg.ExecutorMain - 生成数配置文件加载成功
+2019-01-30 18:10:24.949 [main] INFO  com.metadata.yg.handle.WriteDataHandle - [java.io.BufferedOutputStream@5649fd9b, java.io.BufferedOutputStream@6adede5, java.io.BufferedOutputStream@2d928643, java.io.BufferedOutputStream@5025a98f, java.io.BufferedOutputStream@49993335, java.io.BufferedOutputStream@20322d26, java.io.BufferedOutputStream@192b07fd, java.io.BufferedOutputStream@64bfbc86, java.io.BufferedOutputStream@64bf3bbf, java.io.BufferedOutputStream@55d56113, java.io.BufferedOutputStream@148080bb, java.io.BufferedOutputStream@dc24521, java.io.BufferedOutputStream@10bdf5e5, java.io.BufferedOutputStream@6e1ec318, java.io.BufferedOutputStream@7e0b0338, java.io.BufferedOutputStream@617faa95, java.io.BufferedOutputStream@1e127982, java.io.BufferedOutputStream@60c6f5b, java.io.BufferedOutputStream@2038ae61, java.io.BufferedOutputStream@3c0f93f1, java.io.BufferedOutputStream@31dc339b, java.io.BufferedOutputStream@544fe44c]
+2019-01-30 18:10:25.162 [main] INFO  com.metadata.yg.handle.WriteDataHandle - flush线程：main, 消费完成，消费数据长度：1000
+2019-01-30 18:10:25.162 [main] INFO  com.metadata.yg.task.DataExecutor - 任务完成时间:1161 ms
+2019-01-30 18:10:25.164 [main] INFO  com.metadata.yg.utils.FileUtils - 空文件已清除
+2019-01-30 18:10:25.165 [main] INFO  com.metadata.yg.ExecutorMain - 生成结束
